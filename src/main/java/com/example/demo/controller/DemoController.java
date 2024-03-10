@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 public class DemoController {
 
-    private DemoRepository demoRepository;
+    private final DemoRepository demoRepository;
 
     public DemoController(DemoRepository demoRepository) {
         this.demoRepository = demoRepository;
